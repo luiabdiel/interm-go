@@ -23,6 +23,6 @@ func main() {
 	fmt.Println(endereco)
 	endereco.Cidade = "Texas City"
 	fmt.Println(endereco.Cidade)
-	idade := pessoa.IdadeAtual()
-	fmt.Println(idade)
+	pessoa.CalculaIdade()
+	fmt.Println(pessoa.Idade)
 }
