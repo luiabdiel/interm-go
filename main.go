@@ -20,9 +20,18 @@ func main() {
 	}
 
 	fmt.Println(pessoa)
-	fmt.Println(endereco)
-	endereco.Cidade = "Texas City"
-	fmt.Println(endereco.Cidade)
-	pessoa.CalculaIdade()
-	fmt.Println(pessoa.Idade)
+
+	automovel := model.Automovel{
+		Ano:    2023,
+		Placa:  "XPTO",
+		Modelo: "CG",
+	}
+
+	moto := model.Moto{
+		Automovel:   automovel,
+		Cilindradas: 125,
+	}
+
+	fmt.Println(moto)
+	fmt.Println(moto.Modelo)
 }
